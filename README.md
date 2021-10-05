@@ -93,20 +93,27 @@ $ git commit -m "Ex: Foi feito a seguinte mudança"
 Verificar se as configurações de email e nickname estão de acordo com a conta do git hub
 
 Caso não esteja, poderá alterar utilizando os seguintes comandos
+
 $ git config --global --unset user.email
+
 $ git config --global --unset user.name
 
 $ git config --global user.email "email@email.com"
+
 $ git config --global user.name "nickname"
 
 - Criar novo repositório no git hub
 
 $ git remote add origin git@github.com:link_ssh_repositório
-origin é um apelido para o link, para minimizar push, por exemplo.
+
+origin é um apelido para o link, para minimizar o comando push, por exemplo.
 
 $ git branch -M main
+
 Criar uma branch principal (main)
+
 $ git push -u origin main
+
 Fazer upload dos arquivos e versionamento para o git hub.
 
 
