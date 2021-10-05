@@ -50,22 +50,41 @@ Configuração chaves ssh
 
 Criar um repositório 
 
-mkdir curso_git
-cd curso_git/
-ls
-git init 
-git config --global user.email "luccasschardt@hotmail.com"
-git config --global user.name luschardt
-mkdir readme.md
+$ mkdir curso_git
+$ cd tutorial_git/
+$ ls
+$ git init 
+$ git config --global user.email "luccasschardt@hotmail.com"
+$ git config --global user.name luschardt
+$ nano README.md
 
 .md é a extensão markdown nela é possivel formatar os textos utilizando as seguintes estruturas
 
 https://support.typora.io/Markdown-Reference/
 
+Escreva o readme e salve o arquivo
+
+$ git add *
+Esse comando adicionara todos arquivos a stage area, logo poderão ser comitados
+
+[Opcional] $ git add [pasta ou arquivo]
+
+Esse comando adicionará apenas a pasta ou arquivo para stage area, para seguir com o commit
+
+$ git commit -m "Ex: Foi feito a seguinte mudança"
+
 ===================================================================================================================================
 
+Inicio git hub
 
+Verificar se as configurações de email e nickname estão de acordo com a conta do git hub
 
+Caso não esteja, poderá alterar utilizando os seguintes comandos
+git config --global --unset user.email
+git config --global --unset user.name
+
+git config --global user.email "email@email.com"
+git config --global user.name "nickname"
 
 
 
